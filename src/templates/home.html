@@ -1,0 +1,17 @@
+{% extends  './base.html' %}
+
+{% block title %}Pagina {% endblock %}
+
+{% block customCss %}
+ 
+{% endblock %}
+
+{% block body %}
+<h1>Bienvenido </h1>
+<h2>Ejemplos para recuperar datos</h2>
+<h2>{{ current_user.nombre_user}}</h2>
+<h2>{{ current_user.apellido_user}}</h2>
+
+<h2>{{ current_user.tipo_usuario_user}}</h2>
+<a class="btn btn-secondary" href="{{url_for('logout')}}">Cerrar sesion </a>
+{% endblock %}
